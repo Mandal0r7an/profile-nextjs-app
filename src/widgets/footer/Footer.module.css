@@ -1,11 +1,8 @@
 .footer {
     display: flex;
+    flex-direction: column;
     color: white;
-    justify-content: space-between;
     background-color: #0056B3;
-    position: absolute;
-    width: 100%;
-    padding-left: 300px;
     border-radius: 10px;
     width: 1920px;
     height: 318px;
@@ -41,6 +38,25 @@
     padding-right: 12px;
     width: 1320px;
     height: 116px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.footerpart2 {
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    width: 1323px;
+    height: 43px;
+    align-items: center; /* центр по вертикали */
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 24px;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
 }
 
 .logo {
@@ -72,4 +88,64 @@
     font-weight: 400;
     text-decoration: none;
     color: white;
+}
+
+.p2link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.link2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-left: 464px;
+}
+
+.link2_2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    padding-left: 72px;
+}
+
+.footerpart3 {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    width: 1322px;
+    height: 63px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 24px;
+}
+
+.p3link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    color: #0056B3;
+    padding-left: 12px;
+    padding-right: 623px;
+}
+
+.QuestButton {
+    background-color: #0056B3;
+    border: 2px solid #0056B3;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    width: 217px;
+    height: 39px;
+
 }
