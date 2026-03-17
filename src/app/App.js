@@ -1,11 +1,9 @@
-import Header from '../widgets/header/header';
-import Footer from '../widgets/footer/footer';
+import Layout from './layout/Layout';
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Footer />
-    </div>
+    <Layout>
+      <h1>Welcome to my React App!</h1>
+    </Layout>
   );
 };
 
