@@ -1,8 +1,18 @@
+import {Routes, Route} from "react-router-dom";
 import Layout from './layout/Layout';
-const App = () => {
+import ProfilePage from '../pages/profile/ProfilePage';
+import QuestionsPage from "../pages/questions/QuestionsPage"
+import TodoPage from "../pages/todo/TodoPage";
+
+function App() {
   return (
     <Layout>
-      <h1>Welcome to my React App!</h1>
+      <Routes>
+        <Route path="/" element={<ProfilePage />} />
+        <Route path="/questions" element={<div>QUESTIONS</div>} />
+        <Route path="/todo/:id" element={<TodoPage />} />
+
+      </Routes>
     </Layout>
   );
 };
