@@ -9,7 +9,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<ProfilePage />} />
-        <Route path="/questions" element={<div>QUESTIONS</div>} />
+        <Route path="/questions" element={<QuestionsPage />} />
         <Route path="/todo/:id" element={<TodoPage />} />
 
       </Routes>
