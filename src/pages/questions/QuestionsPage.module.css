@@ -1,0 +1,37 @@
+.container {
+    width: 1920px;
+    height: 1964px;
+    font-weight: 600;
+    font-family: Roboto;
+    display:flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.h1 {
+width: 1320px;
+height: 38px;
+font-size: 32px;
+font-weight: 500;
+margin-bottom: 24px;
+}
+
+.h2 {
+    margin: 0;
+}
+
+.pblock1 {
+    width: 1067px;
+    background-color: #F5F7FA;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 16px;
+    margin-top: 12px;
+}
+
+.block1{
+    width: 1320px;
+    height: 161px;
+    font-size: 16px;
+    font-weight: 400;
+}

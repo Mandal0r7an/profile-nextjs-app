@@ -1,23 +1,150 @@
 .container {
-    width: 1320px;
-    height: 1444px;
-    font-family: Roboto;
-    display:flex
+  width: 1320px;
+  height: 1800px;
+  font-family: Roboto;
+  display:flex;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.username {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex; 
+  color: #0056B3;
+}
+
+.usernamecontainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: #E7F0FE;
 }
 
 .left {
-    flex: 3;
+  flex: 1;
 }
 
 .h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
-.block {
-  background: #f5f7fa;
+.block1 {
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.block2 {
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 872px;
+}
+
+.block3 {
+  background-color: #F6F6F6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 872px;
+}
+
+.block4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 77px;
+  width: 872px;
+}
+
+.block5 {
+  width: 871px;
+}
+
+.block7 {
+  background-color: #F5F7FA;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  width: 648px;
+  height: 123px;
+}
+
+.block8 {
+  width: 648px;
+  height: 144px;
+  background-color: #F5F7FA;
+  border-radius: 10px;
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #696969;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  font-family: roboto;
+  font-size: 16px;
+  margin-left: 28px;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.linkItem {
+  display: flex;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  width: 592px;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #0056B3;
+}
+
+.linkInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 16px;
+}
+
+.addLink {
+  background: none;
+  border: none;
+  color: #0056B3;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.statisticItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profileTop {
@@ -27,11 +154,13 @@
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   background: #d9e1f2;
   border-radius: 12px;
-  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form {
@@ -43,41 +172,219 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  width: 629px;
+}
+
+.textProfile {
+  font-size: 20px;
 }
 
 .inputGroup label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   font-size: 14px;
   margin-bottom: 6px;
 }
 
-.inputGroup input {
-  padding: 10px;
-  border-radius: 8px;
+.inputGroup input{
+  background: #e9edf3;
   border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.pSubmit {
+  font-size: 16px;
+  margin: 4px;
+}
+
+.pLevel {
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+.skillsContainer {
+  font-size: 16px;
+  margin: 4px;
+}
+
+.button {
+  margin-right: 10px;
+}
+
+.subscribeButton {
+  background-color: #0056B3;
+  border: 1px solid #0056B3;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;  
+  width: 103px;
+  height: 27px;
+}
+
+.saveButton {
+  background-color: #0056B3;
+  border: 1px solid #0056B3;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;  
+  width: 345px;
+  height: 44px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.btnSave {
+  margin-top: 28px;
+  margin-left: 487.5px;
+  width: 345px;
+}
+
+.progressBar {
+  width: 848px;
+  height: 8px;
+  background: #e0e7f5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  margin-left: 12px
+}
+
+.progressBarBlock5 {
+  width: 400px;
+  height: 8px;
+  background: #e0e7f5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  margin-left: 12px
+}
+
+.leftBlock5 {
+  display: flex;
+  align-items: center;
+}
+
+.rightBlock5 {
+  display: flex;
+  align-items: center;
+
+}
+
+.progressFill {
+  height: 100%;
+  background: #4f7cff;
+  border-radius: 10px;
+}
+
+.level {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.progressText {
+  font-size: 14px;
+  margin-left: 601px;
+  width: 259px;
+  font-size: 16px;
+}
+
+.select {
+padding: 12px;
+border-radius: 10px;
+border: none;
+background: #eef2f7;
+font-size: 14px;
+cursor: pointer;
+width: 397.5px;
+}
+
+.AboutMe{
+  background: #e9edf3;
+  width: 872px;
+  height: 152px;
+  border: none;
+  border-radius: 12px;
+  padding-top: 2px;
+  font-size: 14px;
+  font-family: Roboto;
+}
+
+.statisticLabel {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.statisticValue {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0056B3;
+  margin: 0;
+}
+
+.statisticItem {
+  width: 152px;
+  height: 91px;
   background: white;
+  border-radius: 10px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .right {
-    flex: 1; 
-    border-color: #E7F0FE;
-    border-radius: 10px;
-    background-color: #E7F0FE;
-    width: 391px;
-    height: 382px;
+  flex: 1; 
+  border-color: #E7F0FE;
+  border-radius: 10px;
+  background-color: #E7F0FE;
+  width: 391px;
+  height: 382px;
+  margin-top: 94px;
 }
 
 .tipsTitle {
     font-size: 20px;
     margin: 0;
     padding-left: 16px;
+    margin-top: 12px;
     
 }
 
 .tip {
     font-size: 16px;
     margin: 0;
-    padding-top: 0px;
+    padding-top: 16px;
     padding-left: 16px;
 }
 
@@ -92,7 +399,6 @@
     color: #0056B3;   
     margin: 0;
     margin-left: 16px;
-    padding-bottom: 0px;
 }
 
 .List {
