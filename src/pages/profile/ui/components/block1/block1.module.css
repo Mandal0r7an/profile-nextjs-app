@@ -1,0 +1,86 @@
+.block1 {
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  margin-top: 28px;
+}
+
+.profileTop {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  width: 629px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background: #d9e1f2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.textProfile {
+  font-size: 20px;
+}
+
+.username {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex; 
+  color: #0056B3;
+}
+
+.usernamecontainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background-color: #E7F0FE;
+}
+
+.inputGroup label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  width: 629px;
+}
+
+.inputGroup input{
+  background: #e9edf3;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}

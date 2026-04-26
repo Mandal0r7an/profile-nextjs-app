@@ -1,8 +1,8 @@
 import {Routes, Route} from "react-router-dom";
 import Layout from './layout/Layout';
-import ProfilePage from '../pages/profile/ProfilePage';
-import QuestionsPage from "../pages/questions/QuestionsPage"
-import TodoPage from "../pages/todo/TodoPage";
+import ProfilePage from '../pages/profile/ui/ProfilePage';
+import QuestionsPage from "../pages/questions/ui/QuestionsPage"
+import TodoPage from "../pages/todo/ui/TodoPage";
 
 function App() {
   return (

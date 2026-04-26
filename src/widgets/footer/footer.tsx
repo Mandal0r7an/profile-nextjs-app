@@ -15,7 +15,7 @@ function Footer() {
                 </div>    
                 <div className={styles.navandtext}>
                     <nav className={styles.nav}>
-                        <p href="#" className={styles.plink}>Основное</p>
+                        <a href="#" className={styles.plink}>Основное</a>
                         <a href="#" className={styles.link}>Задачи</a>
                         <a href="#" className={styles.link}>Вопросы с собеседований</a>
                         <a href="#" className={styles.link}>Daily Coding</a>
@@ -24,15 +24,15 @@ function Footer() {
             </div>
             <div className={styles.footerpart2}>
                 <nav className={styles.nav2}>
-                        <p href="#" className={styles.p2link}>@2025 CODE GYM. Все права защищены.</p>
+                        <a href="#" className={styles.p2link}>@2025 CODE GYM. Все права защищены.</a>
                         <a href="#" className={styles.link2}>Политика конфиденциальности</a>
                         <a href="#" className={styles.link2_2}>Пользовательское соглашение</a>
                 </nav>
             </div>
             <div className={styles.footerpart3}>
-                <p href="#" className={styles.p3link}>
+                <a href="#" className={styles.p3link}>
                     Есть вопросы или предложения? Мы всегда готовы помочь!
-                </p>
+                </a>
                 <button className={`${styles.button} ${styles.QuestButton}`}>
                     Обратиться в поддержку
                 </button>

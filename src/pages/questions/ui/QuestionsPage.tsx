@@ -1,4 +1,4 @@
-import { useGetTodosQuery } from "../../entities/todo/api/todoApi";
+import { useGetTodosQuery } from "../../../entities/todo/api/todoApi";
 import { useNavigate } from "react-router-dom";
 import styles from './QuestionsPage.module.css';
 

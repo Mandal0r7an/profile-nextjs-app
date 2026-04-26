@@ -1,11 +1,12 @@
 import { baseApi } from "../../../shared/api/baseApi";
+import { Todo } from "../model/types";
 
 export const todoApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
-        getTodos: builder.query({
+        getTodos: builder.query<Todo[], void>({
             query: () => 'todos?_limit=10'
         }),
-        getTodoById: builder.query({
+        getTodoById: builder.query<Todo, string>({
             query: (id) => `todos/${id}`
         })
     })
