@@ -1,5 +1,5 @@
 import {user} from "@/entities/user/model/types";
-import styles from "./block1.module.css";
+import styles from "./ProfileForm.module.css";
 import { ReactComponent as UserIcon } from '../../../../../shared/ui/assets/icons/User.svg';
 import { ReactComponent as AvatarIcon } from '../../../../../shared/ui/assets/icons/Avatar.svg';
 import { ReactComponent as MailIcon } from '../../../../../shared/ui/assets/icons/Mail.svg';
@@ -8,10 +8,10 @@ type Props = {
     user: user
 };
 
-export const Block1 = ({ user }: Props) => {
+export const ProfileForm = ({ user }: Props) => {
     return (
         
-        <div className={styles.block1}>
+        <div className={styles.ProfileForm}>
             <h1 className={styles.h1}>Профиль</h1>
                 <div className={styles.profileTop}>
 

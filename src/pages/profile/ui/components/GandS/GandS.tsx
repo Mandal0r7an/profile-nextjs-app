@@ -1,11 +1,17 @@
-import styles from "./block4.module.css";
+import styles from "./GandS.module.css";
 import { ReactComponent as GradeIcon } from '../../../../../shared/ui/assets/icons/Grade.svg';
 import { ReactComponent as SpecializationIcon } from '../../../../../shared/ui/assets/icons/Specialization.svg';
 
-export const Block4 = () => {
+type Props = {
+    grades: string[];
+    specializations: string[];
+}
+
+export const GandS = ({ grades, specializations }: Props) => {
     return (
         <div className={styles.block}>
-            <div className={styles.block4}>
+            <div className={styles.GandS}>
+
                     <div>
                         <h1 className={styles.h1}>
                         <label className={styles.label}>
@@ -16,9 +22,9 @@ export const Block4 = () => {
 
                         <div className={styles.selectContainer}>
                             <select className={styles.select}>
-                                <option>Junior</option>
-                                <option>Middle</option>
-                                <option>Senior</option>
+                                {grades.map((grade) => (
+                                    <option key={grade}>{grade}</option>
+                                ))}
                             </select>
                         </div>
                     </div>
@@ -33,12 +39,13 @@ export const Block4 = () => {
 
                         <div className={styles.selectContainer}>
                             <select className={styles.select}>
-                                <option>BackEnd</option>
-                                <option>FrontEnd</option>
-                                <option>FullStack</option>
+                                {specializations.map((specialization) => (
+                                    <option key={specialization}>{specialization}</option>
+                                ))}
                             </select>
                         </div>
                     </div>
+                    
                 </div>
         </div>
     );

@@ -1,7 +1,7 @@
-import styles from "./block3.module.css";
+import styles from "./LevelUp.module.css";
 import { ReactComponent as LevelIcon } from '../../../../../shared/ui/assets/icons/Level.svg';
 
-export const Block3 = () => {
+export const LevelUp = () => {
     return (
         <div className={styles.block}>
             <h1 className={styles.h1}>
@@ -10,7 +10,7 @@ export const Block3 = () => {
                     <span>lvl-уровень</span>
                 </label>
             </h1>
-            <div className={styles.block3}>
+            <div className={styles.LevelUp}>
                 <div className={styles.text}>
                     <h1 className={styles.pLevel}>Текущий уровень: 1</h1>
                     <p className={styles.pLevel}>Решайте задачи и повышайте свой уровень!</p>

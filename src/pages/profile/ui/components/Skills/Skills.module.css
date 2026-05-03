@@ -1,4 +1,4 @@
-.block5 {
+.Skills {
   width: 871px;
 }
 
@@ -26,7 +26,7 @@
   justify-content: center;
 }
 
-.progressBarBlock5 {
+.progressBarSkills {
   width: 400px;
   height: 8px;
   background: #e0e7f5;
@@ -36,13 +36,19 @@
   margin-left: 12px
 }
 
-.leftBlock5 {
+.leftSkills {
   display: flex;
   align-items: center;
 }
 
-.rightBlock5 {
+.rightSkills {
   display: flex;
   align-items: center;
 
+}
+
+.progressFill {
+  height: 100%;
+  background: #4f7cff;
+  border-radius: 10px;
 }

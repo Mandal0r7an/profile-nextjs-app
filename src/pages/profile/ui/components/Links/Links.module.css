@@ -1,0 +1,100 @@
+.Links {
+  width: 648px;
+  height: 144px;
+  background-color: #F5F7FA;
+  border-radius: 10px;
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.h1 {
+  font-size: 32px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  font-family: roboto;
+  font-size: 16px;
+  margin-left: 28px;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  width: 592px;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid #0056B3;
+}
+
+.linkInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #696969;
+}
+
+.addLink {
+  background: none;
+  border: none;
+  color: #0056B3;
+  cursor: pointer;
+  text-align: left;
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+
+.saveButton {
+  background-color: #0056B3;
+  border: 1px solid #0056B3;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;  
+  width: 345px;
+  height: 44px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.btnSave {
+  margin-top: 28px;
+  margin-left: 487.5px;
+  width: 345px;
+}
