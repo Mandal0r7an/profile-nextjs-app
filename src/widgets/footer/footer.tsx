@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 function Footer() {
@@ -16,9 +17,24 @@ function Footer() {
                 <div className={styles.navandtext}>
                     <nav className={styles.nav}>
                         <a href="#" className={styles.plink}>Основное</a>
-                        <a href="#" className={styles.link}>Задачи</a>
-                        <a href="#" className={styles.link}>Вопросы с собеседований</a>
-                        <a href="#" className={styles.link}>Daily Coding</a>
+                        <NavLink 
+                        to="/tasks" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Задачи
+                        </NavLink>
+                        <NavLink 
+                        to="/questions" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Вопросы с собеседований
+                        </NavLink>
+                        <NavLink 
+                        to="/daily-coding" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Daily Coding
+                        </NavLink>
                     </nav>
                 </div>
             </div>

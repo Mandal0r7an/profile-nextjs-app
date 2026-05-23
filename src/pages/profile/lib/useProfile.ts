@@ -1,4 +1,4 @@
-import { useGetUserQuery } from "../../../entities/user/api/userApi";
+import { useGetUserQuery } from "@/entities/user/api/userApi";
 
 export type Skill = {
     name: string;

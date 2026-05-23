@@ -1,6 +1,5 @@
-import { useGetUserQuery } from "../../../entities/user/api/userApi";
+import { useGetUserQuery } from "@/entities/user/api/userApi";
 import styles from './ProfilePage.module.css';
-import { isDate } from "node:util/types";
 import { ProfileForm } from "./components/ProfileForm/ProfileForm"; 
 import { Subscription } from "./components/Subscription/Subscription";
 import { LevelUp } from "./components/LevelUp/LevelUp";
@@ -9,8 +8,8 @@ import { Skills } from "./components/Skills/Skills";
 import { Personality } from "./components/Personality/Personality";
 import { Statistics } from "./components/Statistics/Statistics";
 import { Links } from "./components/Links/Links";
-import { useProfile } from "../lib/useProfile";
-import { grades, specialties } from "../lib/useGrade";
+import { useProfile } from "@/pages/profile/lib/useProfile";
+import { grades, specialties } from "@/pages/profile/lib/useGrade";
 
 function ProfilePage() {
     const { user, isLoading, error, progress, skills } = useProfile();

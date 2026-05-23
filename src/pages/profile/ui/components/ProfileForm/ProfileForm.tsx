@@ -1,9 +1,9 @@
 import {user} from "@/entities/user/model/types";
 import styles from "./ProfileForm.module.css";
-import { ReactComponent as UserIcon } from '../../../../../shared/ui/assets/icons/User.svg';
-import { ReactComponent as AvatarIcon } from '../../../../../shared/ui/assets/icons/Avatar.svg';
-import { ReactComponent as MailIcon } from '../../../../../shared/ui/assets/icons/Mail.svg';
-import { ReactComponent as TelegramIcon } from '../../../../../shared/ui/assets/icons/Telegram.svg';
+import { ReactComponent as UserIcon } from '@/shared/ui/assets/icons/User.svg';
+import { ReactComponent as AvatarIcon } from '@/shared/ui/assets/icons/Avatar.svg';
+import { ReactComponent as MailIcon } from '@/shared/ui/assets/icons/Mail.svg';
+import { ReactComponent as TelegramIcon } from '@/shared/ui/assets/icons/Telegram.svg';
 type Props = {
     user: user
 };

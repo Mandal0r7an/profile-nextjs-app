@@ -1,5 +1,5 @@
 import styles from "./Links.module.css";
-import { ReactComponent as LinkIcon } from '../../../../../shared/ui/assets/icons/Link.svg';
+import { ReactComponent as LinkIcon } from '@/shared/ui/assets/icons/Link.svg';
 
 export const Links = () => {
     return (

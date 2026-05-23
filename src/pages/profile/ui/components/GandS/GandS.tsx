@@ -1,6 +1,6 @@
 import styles from "./GandS.module.css";
-import { ReactComponent as GradeIcon } from '../../../../../shared/ui/assets/icons/Grade.svg';
-import { ReactComponent as SpecializationIcon } from '../../../../../shared/ui/assets/icons/Specialization.svg';
+import { ReactComponent as GradeIcon } from '@/shared/ui/assets/icons/Grade.svg';
+import { ReactComponent as SpecializationIcon } from '@/shared/ui/assets/icons/Specialization.svg';
 
 type Props = {
     grades: string[];

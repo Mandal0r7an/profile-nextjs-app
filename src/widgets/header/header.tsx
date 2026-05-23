@@ -1,16 +1,33 @@
 import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header className ={styles.header}>
-            <div className={styles.logo}>CODE GYM</div>
+            <NavLink 
+                to="/general" 
+                className={styles.logo}>
+                CODE GYM
+            </NavLink>
                 <nav className={styles.nav}>
-                    <a href="#" className={styles.link}>Задачи</a>
-                    <Link to="/questions" className={styles.link}>
-                    Вопросы с собеседований
-                    </Link>
-                    <a href="#" className={styles.link}>Daily Coding</a>
+                    <NavLink 
+                        to="/tasks" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Задачи
+                    </NavLink>
+                    <NavLink 
+                        to="/questions" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Вопросы с собеседований
+                    </NavLink>
+                    <NavLink 
+                        to="/daily-coding" 
+                        className={({ isActive }) => 
+                            isActive ? styles.activeLink : styles.link}>
+                        Daily Coding
+                    </NavLink>
                 </nav>
             <div className={styles.buttons}>
             <button className={`${styles.button} ${styles.loginButton}`}>

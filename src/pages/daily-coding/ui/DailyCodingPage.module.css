@@ -1,0 +1,18 @@
+.ButtonEnd {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    padding-bottom: 10px;       
+}
+
+.endButton {
+    width: 345px;
+    height: 44px;
+    background-color: #0056B3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+}

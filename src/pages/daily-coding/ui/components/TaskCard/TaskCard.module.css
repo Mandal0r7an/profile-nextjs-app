@@ -1,0 +1,121 @@
+* {
+    font-family: Roboto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.id {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e7f0ff;
+    color: #0056B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.difficulty {
+    background: #d8f5dc;
+    color: green;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+.editor {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: #f5f5f5;
+    padding: 20px;
+    resize: none;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.run {
+    display: inline-flex;       
+    align-items: center;       
+    justify-content: center;     
+    gap: 8px;                
+    padding: 8px 16px;          
+    border: 2px solid #52A46C;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #52A46C;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.submit {
+    display: inline-flex;     
+    align-items: center;        
+    justify-content: center;     
+    gap: 8px;                    
+    padding: 8px 16px;        
+    border: 2px solid #52A46C;
+    border-radius: 10px;
+    background-color: #52A46C;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.console {
+    display: flex;
+    align-items: center;        
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 3px solid #0056B3;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0056B3;
+    padding-top: 12px;
+    width: 96px;
+}
+
+.runIcon {
+  width: 20px;               
+  height: 20px;              
+}
+
+.codeHighlight {
+    background-color: #e6e4e4; /* светло-серый фон */
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: Roboto;
+}

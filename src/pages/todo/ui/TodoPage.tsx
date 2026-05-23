@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import { useGetTodoByIdQuery } from "../../../entities/todo/api/todoApi";
+import { useGetTodoByIdQuery } from "@/entities/todo/api/todoApi";
 
 function TodoPage() {
     const {id} = useParams();
