@@ -9,13 +9,13 @@ import DailyCodingPage from "@/pages/daily-coding/ui/DailyCodingPage";
 import GeneralPage from "@/pages/general/ui/GeneralPage";
 import { NotFoundPage } from "@/pages/not-found/ui";
 import { EntrancePage } from "@/pages/entrance/ui";
-import Header from "@/widgets/header/Header";
+import { SubscriptionPage } from "@/pages/subscription/ui/SubscriptionPage";
 
 function App() {
     return (
         <Routes>
 
-            <Route path="/" element={
+            <Route path="/profile" element={
                     <Layout>
                         <ProfilePage />
                     </Layout>
@@ -54,6 +54,13 @@ function App() {
             />
 
             <Route path="/entrance" element={<EntrancePage />}
+            />
+
+            <Route path="/subscription" element={
+                    <Layout>
+                        <SubscriptionPage />
+                    </Layout>
+                }
             />
 
         </Routes>

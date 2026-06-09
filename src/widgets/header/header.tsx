@@ -39,9 +39,15 @@ function Header() {
             </button>
             </NavLink>
 
+            <NavLink
+                to="/profile"
+                className={({ isActive }) =>
+                    isActive ? styles.button : styles.registerButton}>
             <button className={`${styles.button} ${styles.registerButton}`}>
                 Регистрация
             </button>
+            </NavLink>
+
             </div>
         </header>
   );

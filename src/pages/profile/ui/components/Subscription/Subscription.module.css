@@ -45,6 +45,8 @@
 }
 
 .subscribeButton {
+  display: flex;
+  align-items: center;
   background-color: #0056B3;
   border: 1px solid #0056B3;
   border-radius: 5px;
