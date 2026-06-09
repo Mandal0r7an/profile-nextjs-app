@@ -1,12 +1,12 @@
 import { baseApi } from "@/shared/api/baseApi";
-import { user } from "@/entities/user/model/types";
+import { User } from "@/entities/user/model/types";
 
 export const userApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
-        getUser: builder.query<user, void>({
+        getUser: builder.query<User, void>({
             query: () => "users/1"
         })
     })
-})  
+})
 
 export const {useGetUserQuery} = userApi;

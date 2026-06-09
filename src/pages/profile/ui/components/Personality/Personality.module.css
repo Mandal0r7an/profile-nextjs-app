@@ -1,16 +1,23 @@
 .AboutMe{
   background: #e9edf3;
-  width: 872px;
-  height: 152px;
+  width: 100%;
+  max-width: 872px;
+  height: auto;
+  min-height: 152px;
   border: none;
   border-radius: 12px;
-  padding-top: 2px;
+  padding: 12px;
+  box-sizing: border-box;
   font-size: 14px;
   font-family: Roboto;
+  resize: vertical;
+  margin-bottom: 20px;
 }
 
 .h1 {
   font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .label {
@@ -26,4 +33,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AboutMe {
+    min-height: 120px;
+    padding: 10px;
+  }
+  
+  .h1 {
+    font-size: 20px;
+  }
+  
+  .AboutMe {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .AboutMe {
+    min-height: 100px;
+    padding: 8px;
+    font-size: 12px;
+  }
+  
+  .h1 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
 }

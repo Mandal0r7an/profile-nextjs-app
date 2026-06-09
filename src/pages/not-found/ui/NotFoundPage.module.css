@@ -1,0 +1,96 @@
+.container {
+    width: 100%;
+    max-width: 789px;
+    height: 100%;
+    max-height: 679px;
+    margin: 0 auto;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.code {
+    font-size: 96px;
+    margin: 0 ;
+    font-weight: 600;
+    color: #0056B3
+}
+
+.message {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.codeBlock {
+    width: 100%;
+    background-color: #f5f7fb;
+    border-radius: 12px;
+    padding: 24px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.codeBlock pre {
+    margin: 0;
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.answers {
+  display: flex;  
+  gap: 20px;
+  width: 100%;
+  max-width: 789px;
+  margin-bottom: 32px;
+}
+
+.answer {
+  display: flex;
+  border-color: #0056B3; 
+  border-radius: 10px;
+  height: 78px;
+  width: 100%;
+  max-width: 250px;
+  box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+ 
+}
+
+.variant {
+    width: 100%;
+    max-width: 789px; 
+}
+
+.text {
+    width: 100%;
+    max-width: 173px;
+    flex: 1;
+    padding-left: 39px; 
+}
+
+.back {
+    background-color: #0056B3;
+    border: 2px solid #0056B3;
+    border-radius: 10px;
+    gap: 10px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    max-width: 178px;
+    height: 44px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.Icon {
+    padding-right: 10px;
+}

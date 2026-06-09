@@ -1,6 +1,6 @@
-import Header from '@/widgets/header/header';
-import Footer from '@/widgets/footer/footer';
-import styles from '@/Layout.module.css';
+import Header from '@/widgets/header/Header';
+import Footer from '@/widgets/footer/Footer';
+import styles from './Layout.module.css';
 
 type Props = {
   children: React.ReactNode;
@@ -8,14 +8,15 @@ type Props = {
 
 function Layout({ children }: Props) {
   return (
-    <div>
+    <div className={styles.layout}>
       <Header />
 
-      <main>
+      <main className={styles.main}>
         {children}
       </main>
 
       <Footer />
+
     </div>
   );
 }

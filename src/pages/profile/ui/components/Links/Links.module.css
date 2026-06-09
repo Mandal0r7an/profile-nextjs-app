@@ -1,14 +1,21 @@
 .Links {
-  width: 648px;
-  height: 144px;
+  width: 100%;
+  max-width: 648px;
+  height: auto;
+  min-height: 144px;
   background-color: #F5F7FA;
   border-radius: 10px;
   font-family: roboto;
   font-size: 16px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .h1 {
   font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .label {
@@ -24,6 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .links {
@@ -33,20 +41,18 @@
   gap: 12px;
   font-family: roboto;
   font-size: 16px;
-  margin-left: 28px;
+  margin-left: 0;
 }
 
 .linkItem {
   display: flex;
   align-items: center;
   gap: 8px;
-  display: flex;
   margin-top: 12px;
   padding-bottom: 12px;
-  width: 592px;
-  align-items: center;
-  gap: 8px;
+  width: 100%;
   border-bottom: 2px solid #0056B3;
+  box-sizing: border-box;
 }
 
 .linkInput {
@@ -55,6 +61,7 @@
   outline: none;
   background: transparent;
   font-size: 16px;
+  min-width: 0;
 }
 
 .remove {
@@ -63,6 +70,12 @@
   cursor: pointer;
   font-size: 16px;
   color: #696969;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.remove:hover {
+  color: #0056B3;
 }
 
 .addLink {
@@ -73,6 +86,11 @@
   text-align: left;
   font-size: 16px;
   padding-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.addLink:hover {
+  color: #003d82;
 }
 
 .saveButton {
@@ -85,6 +103,12 @@
   font-size: 16px;  
   width: 345px;
   height: 44px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #003d82;
 }
 
 .btn {
@@ -95,6 +119,74 @@
 
 .btnSave {
   margin-top: 28px;
-  margin-left: 487.5px;
-  width: 345px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .h1 {
+    font-size: 28px;
+  }
+  
+  .saveButton {
+    width: 280px;
+  }
+  
+  .btnSave {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Links {
+    max-width: 100%;
+    padding: 12px;
+  }
+  
+  .h1 {
+    font-size: 20px;
+  }
+  
+  .links {
+    font-size: 14px;
+  }
+  
+  .saveButton {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  
+  .btnSave {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Links {
+    padding: 8px;
+  }
+  
+  .h1 {
+    font-size: 18px;
+  }
+  
+  .links {
+    font-size: 12px;
+  }
+  
+  .linkInput {
+    font-size: 13px;
+  }
+  
+  .saveButton {
+    font-size: 13px;
+    height: 36px;
+  }
+  
+  .btnSave {
+    margin-top: 12px;
+  }
 }

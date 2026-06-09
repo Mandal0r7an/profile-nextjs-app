@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { TaskCard } from './components';
 import { DailyCodingHeader } from './components/DailyCodingHeader/DailyCodingHeader';
 import { tasks } from '../model/mock';
+import { NotFoundPage } from '@/pages/not-found/ui/NotFoundPage';
 
 function DailyCoding() {
     const navigate = useNavigate();
     const { data, isLoading, error} = useGetTodosQuery();
     
         if (isLoading) return <p>Загрузка...</p>
-        if (error) return <p>Ошибка</p>;
+        if (error) return <NotFoundPage />;
 
     return (
         <div className={styles.container}>

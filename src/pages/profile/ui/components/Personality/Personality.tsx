@@ -1,6 +1,6 @@
 import styles from "./Personality.module.css";
-import { ReactComponent as AboutMeIcon } from '@/shared/ui/assets/icons/AboutMe.svg';
-import { ReactComponent as StatisticIcon } from '@/shared/ui/assets/icons/Statistic.svg';
+import { ReactComponent as AboutMeIcon } from '@/shared/ui/assets/icons/profile/AboutMe.svg';
+import { ReactComponent as StatisticIcon } from '@/shared/ui/assets/icons/profile/Statistic.svg';
 
 export const Personality = () => {
     return (

@@ -1,6 +1,6 @@
 import styles from "./GandS.module.css";
-import { ReactComponent as GradeIcon } from '@/shared/ui/assets/icons/Grade.svg';
-import { ReactComponent as SpecializationIcon } from '@/shared/ui/assets/icons/Specialization.svg';
+import { ReactComponent as GradeIcon } from '@/shared/ui/assets/icons/profile/Grade.svg';
+import { ReactComponent as SpecializationIcon } from '@/shared/ui/assets/icons/profile/Specialization.svg';
 
 type Props = {
     grades: string[];
@@ -12,7 +12,7 @@ export const GandS = ({ grades, specializations }: Props) => {
         <div className={styles.block}>
             <div className={styles.GandS}>
 
-                    <div>
+                    <div className={styles.grade}>
                         <h1 className={styles.h1}>
                         <label className={styles.label}>
                             <GradeIcon className={styles.icon} />
@@ -29,7 +29,7 @@ export const GandS = ({ grades, specializations }: Props) => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className={styles.specialization}>
                         <h1 className={styles.h1}>
                         <label className={styles.label}>
                             <SpecializationIcon className={styles.icon} />
@@ -44,9 +44,8 @@ export const GandS = ({ grades, specializations }: Props) => {
                                 ))}
                             </select>
                         </div>
-                    </div>
-                    
-                </div>
+                </div> 
+            </div>
         </div>
     );
 } 

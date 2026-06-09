@@ -1,5 +1,5 @@
 import styles from "./Subscription.module.css";
-import { ReactComponent as GiftIcon } from '@/shared/ui/assets/icons/Gift.svg';
+import { ReactComponent as GiftIcon } from '@/shared/ui/assets/icons/profile/Gift.svg';
 
 export const Subscription = () => {
     return (

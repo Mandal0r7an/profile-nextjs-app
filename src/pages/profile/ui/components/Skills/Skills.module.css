@@ -1,5 +1,8 @@
 .Skills {
-  width: 871px;
+  width: 100%;
+  max-width: 871px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .skillsContainer {
@@ -16,6 +19,8 @@
 
 .h1 {
   font-size: 32px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -24,6 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .progressBarSkills {
@@ -33,22 +39,67 @@
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 8px;
-  margin-left: 12px
+  margin-left: 12px;
 }
 
 .leftSkills {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .rightSkills {
   display: flex;
   align-items: center;
-
+  gap: 8px;
 }
 
 .progressFill {
   height: 100%;
   background: #4f7cff;
   border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .progressBarSkills {
+    width: 300px;
+  }
+  
+  .h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Skills {
+    max-width: 100%;
+  }
+  
+  .progressBarSkills {
+    width: 200px;
+  }
+  
+  .h1 {
+    font-size: 20px;
+  }
+  
+  .skillsContainer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .progressBarSkills {
+    width: 150px;
+    height: 6px;
+  }
+  
+  .h1 {
+    font-size: 18px;
+  }
+  
+  .skillsContainer {
+    font-size: 12px;
+    margin: 2px;
+  }
 }

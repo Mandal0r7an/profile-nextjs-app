@@ -10,12 +10,13 @@ import { Statistics } from "./components/Statistics/Statistics";
 import { Links } from "./components/Links/Links";
 import { useProfile } from "@/pages/profile/lib/useProfile";
 import { grades, specialties } from "@/pages/profile/lib/useGrade";
+import { NotFoundPage } from "@/pages/not-found/ui/NotFoundPage";
 
 function ProfilePage() {
     const { user, isLoading, error, progress, skills } = useProfile();
 
     if (isLoading) return <p>Загрузка...</p>
-    if (error) return <p>Ошибка</p>
+    if (error) return <NotFoundPage />
     if (!user) return null;
 
     return (

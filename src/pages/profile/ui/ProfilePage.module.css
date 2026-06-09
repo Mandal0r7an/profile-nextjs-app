@@ -1,36 +1,72 @@
 .container {
-  width: 1320px;
-  height: 1800px;
+  width: 100%;
+  max-width: 1320px;
+  height: auto;
   font-family: Roboto;
-  display:flex;
+  display: flex;
   margin: 0 auto;
   gap: 32px;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .left {
   flex: 1;
+  min-width: 250px;
+  gap: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .right {
-  flex: 1; 
+  flex: 1;
+  min-width: 250px;
   border-color: #E7F0FE;
   border-radius: 10px;
   background-color: #E7F0FE;
-  width: 391px;
-  height: 382px;
+  width: 100%;
+  max-width: 391px;
+  height: auto;
+  min-height: 382px;
   margin-top: 94px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  align-self: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: 24px;
+    padding: 16px;
+  }
+  
+  .right {
+    max-width: 100%;
+    margin-top: 92px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 12px;
+  }
+  
+  .left {
+    min-width: 100%;
+  }
+  
+  .right {
+    max-width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 16px;
+    padding: 8px;
+  }
 }
 
 .tipsTitle {
@@ -38,7 +74,6 @@
     margin: 0;
     padding-left: 16px;
     margin-top: 12px;
-    
 }
 
 .tip {
@@ -65,4 +100,16 @@
     margin: 0;
     margin-left: 16px;
     padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .tipsTitle, .tip, .p1, .h4 {
+    padding-left: 12px;
+    margin-left: 12px;
+    font-size: 14px;
+  }
+  
+  .tipsTitle {
+    font-size: 18px;
+  }
 }

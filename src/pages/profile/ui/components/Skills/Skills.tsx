@@ -1,5 +1,5 @@
 import styles from "./Skills.module.css";
-import { ReactComponent as SkillsIcon } from '@/shared/ui/assets/icons/Skills.svg';
+import { ReactComponent as SkillsIcon } from '@/shared/ui/assets/icons/profile/Skills.svg';
 import { Skill } from "@/pages/profile/lib/useProfile";
 
 type Props = {

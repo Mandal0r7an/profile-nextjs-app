@@ -30,9 +30,14 @@ function Header() {
                     </NavLink>
                 </nav>
             <div className={styles.buttons}>
+            <NavLink
+                to="/entrance"
+                className={({ isActive }) =>
+                    isActive ? styles.button : styles.loginButton}>
             <button className={`${styles.button} ${styles.loginButton}`}>
                 Вход
             </button>
+            </NavLink>
 
             <button className={`${styles.button} ${styles.registerButton}`}>
                 Регистрация

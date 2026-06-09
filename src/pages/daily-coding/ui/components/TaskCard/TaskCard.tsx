@@ -1,7 +1,7 @@
 import styles from './TaskCard.module.css';
 import { Task } from '../../../model/types';
-import { ReactComponent as FavoriteButtonIcon } from '@/shared/ui/assets/icons/FavoriteButton.svg';
-import { ReactComponent as PlayInButtonIcon } from '@/shared/ui/assets/icons/PlayInButton.svg';
+import { ReactComponent as FavoriteButtonIcon } from '@/shared/ui/assets/icons/profile/FavoriteButton.svg';
+import { ReactComponent as PlayInButtonIcon } from '@/shared/ui/assets/icons/profile/PlayInButton.svg';
 
 type Props = {
     task: Task;

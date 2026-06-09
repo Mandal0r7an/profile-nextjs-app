@@ -1,5 +1,5 @@
 import styles from "./LevelUp.module.css";
-import { ReactComponent as LevelIcon } from '@/shared/ui/assets/icons/Level.svg';
+import { ReactComponent as LevelIcon } from '@/shared/ui/assets/icons/profile/Level.svg';
 
 export const LevelUp = () => {
     return (

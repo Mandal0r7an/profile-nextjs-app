@@ -5,25 +5,35 @@
   align-items: center;
   border-radius: 10px;
   display: flex;
-  width: 648px;
-  height: 123px;
+  width: 100%;
+  max-width: 648px;
+  height: auto;
+  min-height: 123px;
+  padding: 16px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .statisticItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 152px;
-  height: 91px;
+  justify-content: center;
+  flex: 1;
+  min-width: 100px;
+  height: auto;
+  min-height: 91px;
   background: white;
   border-radius: 10px;
-  margin-left: 16px;
-  margin-right: 16px;
+  padding: 12px;
+  box-sizing: border-box;
 }
 
 .statisticLabel {
   font-family: Roboto;
   font-size: 16px;
+  text-align: center;
 }
 
 .statisticValue {
@@ -32,4 +42,46 @@
   font-weight: 700;
   color: #0056B3;
   margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Statistics {
+    gap: 16px;
+    padding: 12px;
+  }
+  
+  .statisticItem {
+    min-width: 80px;
+    padding: 10px;
+  }
+  
+  .statisticLabel {
+    font-size: 14px;
+  }
+  
+  .statisticValue {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Statistics {
+    gap: 12px;
+    padding: 8px;
+  }
+  
+  .statisticItem {
+    min-width: 70px;
+    min-height: 80px;
+    padding: 8px;
+  }
+  
+  .statisticLabel {
+    font-size: 12px;
+  }
+  
+  .statisticValue {
+    font-size: 18px;
+  }
 }

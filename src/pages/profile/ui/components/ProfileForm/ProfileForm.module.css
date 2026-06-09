@@ -1,21 +1,22 @@
 .ProfileForm {
-  padding: 20px;
+  padding: 0px;
   border-radius: 12px;
   margin-bottom: 20px;
-  margin-top: 28px;
+  box-sizing: border-box;
 }
 
 .profileTop {
   display: flex;
   gap: 24px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .inputGroup {
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
-  width: 629px;
+  width: 100%;
 }
 
 .avatar {
@@ -26,16 +27,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .form {
   flex: 1;
   display: flex;
   flex-direction: column;
+  min-width: 250px;
 }
 
 .textProfile {
   font-size: 20px;
+  margin: 0;
 }
 
 .username {
@@ -63,19 +67,14 @@
   margin-bottom: 6px;
 }
 
-.inputGroup {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  width: 629px;
-}
-
 .inputGroup input{
   background: #e9edf3;
   border: none;
   border-radius: 12px;
   padding: 14px;
   font-size: 14px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .label {
@@ -83,4 +82,60 @@
   align-items: center;
   gap: 8px;
   line-height: 1;
+}
+
+.h1 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .inputGroup {
+    width: 100%;
+  }
+  
+  .profileTop {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ProfileForm {
+    padding: 16px;
+  }
+  
+  .profileTop {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .textProfile {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ProfileForm {
+    padding: 12px;
+  }
+  
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .textProfile {
+    font-size: 16px;
+  }
+  
+  .inputGroup input {
+    font-size: 13px;
+    padding: 10px;
+  }
 }
