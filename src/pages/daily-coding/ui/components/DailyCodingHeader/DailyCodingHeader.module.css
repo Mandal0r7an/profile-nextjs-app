@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+    max-width: 1836px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}

@@ -1,10 +1,12 @@
 import { useTimer } from "../../../lib/useTimer";
+import styles  from "../DailyCodingHeader/DailyCodingHeader.module.css";
 
 export const DailyCodingHeader = () => {
     const { hours, minutes, seconds } = useTimer(86400); // 24-hour timer
 
     return (
-        <div>
+        <div className={styles.container}>
+            <div>
             <h1>Daily Coding</h1>
             <p>
                 Ежедневные задачи от ведущих компаний помогут вам 
@@ -14,6 +16,7 @@ export const DailyCodingHeader = () => {
             <p>
                 Обновится через: {hours}:{minutes}:{seconds < 10 ? `0${seconds}` : seconds}
             </p>
+            </div>
         </div>
     );
 };

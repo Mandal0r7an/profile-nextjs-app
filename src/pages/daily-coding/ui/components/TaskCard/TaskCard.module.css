@@ -3,11 +3,14 @@
 }
 
 .card {
+    width: 100%;
+    max-width: 1836px;
     background: white;
     border-radius: 12px;
-    padding: 20px;
     margin-top: 20px;
+    margin: 0 auto;
     box-sizing: border-box;
+
 }
 
 .header {

@@ -1,4 +1,5 @@
 import {useParams} from "react-router-dom";
+import { NotFoundPage } from "@/pages/not-found/ui/NotFoundPage"
 import { useGetTodoByIdQuery } from "@/entities/todo/api/todoApi";
 
 function TodoPage() {
@@ -6,7 +7,7 @@ function TodoPage() {
     const {data, isLoading, error} = useGetTodoByIdQuery(id);
 
     if (isLoading) return <p>Загрузка...</p>
-    if (error) return <p>Ошибка</p>;
+    if (error) return <NotFoundPage />;
 
     return (
         <div>
