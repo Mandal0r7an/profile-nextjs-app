@@ -1,0 +1,10 @@
+.questions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    margin-top: 106px;
+    margin-bottom: 28px;
+}

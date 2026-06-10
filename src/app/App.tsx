@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Layout from './layout/Layout';
 
 import ProfilePage from '@/pages/profile/ui/ProfilePage';
-import QuestionsPage from "@/pages/questions/ui/SSR";
+import QuestionPage from "@/pages/questions/ui/QuestionPage";
 import TodoPage from "@/pages/todo/ui/TodoPage";
 import DailyCodingPage from "@/pages/daily-coding/ui/DailyCodingPage";
 import GeneralPage from "@/pages/general/ui/GeneralPage";
@@ -24,7 +24,7 @@ function App() {
 
             <Route path="/questions" element={
                     <Layout>
-                        <QuestionsPage />
+                        <QuestionPage />
                     </Layout>
                 }
             />

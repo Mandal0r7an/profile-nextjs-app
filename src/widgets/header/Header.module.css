@@ -57,6 +57,7 @@
 @media (max-width: 1024px) {
     .nav {
         gap: 16px;
+        display: none;
     }
 }
 
