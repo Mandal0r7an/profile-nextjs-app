@@ -1,12 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-
 import Layout from './layout/Layout';
-
 import ProfilePage from '@/pages/profile/ui/ProfilePage';
 import QuestionPage from "@/pages/questions/ui/QuestionPage";
 import TodoPage from "@/pages/todo/ui/TodoPage";
 import DailyCodingPage from "@/pages/daily-coding/ui/DailyCodingPage";
 import GeneralPage from "@/pages/general/ui/GeneralPage";
+import TasksPage from "@/pages/tasks/ui/TasksPage";
 import { NotFoundPage } from "@/pages/not-found/ui";
 import { EntrancePage } from "@/pages/entrance/ui";
 import { SubscriptionPage } from "@/pages/subscription/ui/SubscriptionPage";
@@ -46,6 +45,13 @@ function App() {
             <Route path="/general" element={
                     <Layout>
                         <GeneralPage />
+                    </Layout>
+                }
+            />
+
+            <Route path="/tasks" element={
+                    <Layout>
+                        <TasksPage />
                     </Layout>
                 }
             />

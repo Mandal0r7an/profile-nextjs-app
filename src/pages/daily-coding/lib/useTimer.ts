@@ -1,25 +1,43 @@
 import { useEffect, useState } from 'react';
 
-export const useTimer = (initialTime: number) => {
-    const [time, setTime] = useState(initialTime);
+export const useTimer = () => {
+    const getTimeLeft = () => {
+        const now = new Date();
+
+        const tomorrow = new Date();
+
+        tomorrow.setHours(24, 0, 0, 0);
+
+        const difference = tomorrow.getTime() - now.getTime();
+
+        const hours = Math.floor(difference / (1000 * 60 * 60));
+
+        const minutes = Math.floor(
+            (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+
+        const seconds = Math.floor(
+            (difference % (1000 * 60)) / 1000
+        );
+
+        return {
+            hours,
+            minutes,
+            seconds,
+        };
+    };
+
+    const [time, setTime] = useState(getTimeLeft());
 
     useEffect(() => {
-        if (time <= 0) return;
 
-        const timer = setInterval(() => {
-            setTime(prevTime => prevTime - 1);
+        const interval = setInterval(() => {
+
+            setTime(getTimeLeft());
         }, 1000);
 
-        return () => clearInterval(timer);
-    }, [time]);
+        return () => clearInterval(interval);
+    }, []);
 
-    const hours = Math.floor(time / 3600);
-    const minutes = Math.floor((time % 3600) / 60);
-    const seconds = time % 60;
-
-    return {
-        hours,
-        minutes,
-        seconds
-    };
+    return time;
 };
