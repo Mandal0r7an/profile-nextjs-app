@@ -20,9 +20,27 @@ export const TasksPage = () => {
     const [search, setSearch] = useState('');
     const [companySearch, setCompanySearch] = useState('');
     const [selectedDifficulty, setSelectedDifficulty] = useState('');
-    const filteredTasks = Tasks.filter((task) =>
-            task.title.toLowerCase().includes(search.toLowerCase())
+    const [selectedLanguage, setSelectedLanguage] = useState('');
+
+    const filteredTasks = Tasks.filter((task) => {
+        const matchesTitle = task.title
+            .toLowerCase()
+            .includes(search.toLowerCase());
+
+        const mathesCompany = task.bank
+            .toLowerCase()
+            .includes(companySearch.toLowerCase())
+
+        const mathesDifficulty = 
+            selectedDifficulty === '' || 
+            task.complexity === selectedDifficulty;
+
+        return (
+            matchesTitle &&
+            mathesCompany &&
+            mathesDifficulty
         );
+});
 
     if (isLoading) return <p>Загрузка...</p>;
     if (error) return <NotFoundPage />;
@@ -40,7 +58,11 @@ export const TasksPage = () => {
                     onChange={setSearch}
                 />
                 
-                <DifficultySelect difficulty={difficulty}/>
+                <DifficultySelect 
+                    difficulty={difficulty}
+                    value={selectedDifficulty}
+                    onChange={setSelectedDifficulty}
+                />
 
                 <LanguageSelect language={language}/>
 

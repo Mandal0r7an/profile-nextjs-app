@@ -3,18 +3,18 @@ import { useState } from 'react'
 
 type Props = {
     difficulty: string[];
-}
+    value: string;
+    onChange: (value: string) => void;
+};
 
-export const DifficultySelect = ({ difficulty }: Props) => {
-
-    const [selectedDifficulty, setSelectedDifficulty] = useState('');
+export const DifficultySelect = ({ difficulty, value, onChange, }: Props) => {
 
     return (
         <div className={styles.selectContainer}>
             <select 
             className={styles.select}
-            value={selectedDifficulty}
-            onChange={(e) => setSelectedDifficulty(e.target.value)}
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
             >
             
 
