@@ -1,0 +1,40 @@
+.container {
+    margin-top: 12px;
+}
+
+.title {
+    margin: 0 0 8px 0;
+
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B7280;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #E8F1FF;
+    color: #0056D2;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.close {
+    font-size: 16px;
+}

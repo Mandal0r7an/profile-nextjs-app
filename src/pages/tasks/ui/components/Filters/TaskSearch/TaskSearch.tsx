@@ -9,25 +9,26 @@ type Props = {
 export const TaskSearch = ({ value, onChange }: Props) => {
     return (
         <div className={styles.container}>
-
-            <Lupa className={styles.icon} />
+            <div className={styles.minicontainer}>
+                <Lupa className={styles.icon} />
             
-            <input
-                className={styles.search}
-                value={value}
-                onChange={(e) => onChange(e.target.value)}
-                placeholder="Поиск по названию задачи"
-            />
+                <input
+                    className={styles.search}
+                    value={value}
+                    onChange={(e) => onChange(e.target.value)}
+                    placeholder="Поиск по названию задачи"
+                />
 
-            {value && (
-                <button
-                    className={styles.clearButton}
-                    onClick={() => onChange('')}
-                >
-                    ×
-                </button>
-            )}
-
+                {value && (
+                    <button
+                        className={styles.clearButton}
+                        onClick={() => onChange('')}
+                    >
+                        ×
+                    </button>
+                
+                )}
+            </div>
         </div>
     );
 };

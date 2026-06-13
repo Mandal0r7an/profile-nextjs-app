@@ -1,0 +1,104 @@
+.card {
+    width: 100%;
+    max-width: 635px;
+    height: 204px;
+    gap: 25px;
+    padding-left: 16px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0.08,0.08,0.08,0.08);
+}
+
+.h2 {
+    font-size: 20px;
+    font-family: Roboto;
+    margin: 0;
+
+}
+
+.p {
+    width: 100%;
+    max-width: 391px;
+    height: 77px;
+    margin-top: 9px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: Roboto;
+    color: #696969
+}
+
+.button {
+    background-color: #0056B3;
+    border: 2px solid #0056B3;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    width: 170px;
+    height: 39px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.titleAndMark {
+    width: 100%;
+    max-width: 603px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    display: flex;
+    width: 77px;
+    height: 20px;
+    align-items: center;
+    color: #696969;
+}
+
+.bank {
+    display: flex;
+    width: 72px;
+    height: 20px;
+    align-items: center;
+    color: #696969;
+}
+
+.complexity {
+    font-size: 16px;
+    margin: 0;
+    color: #52A46C;
+    font-weight: 400;
+}
+
+.parameters {
+    display: flex; 
+    gap: 12px;  
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+.lang {
+    display: flex;
+}
+
+.difficulty {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.parAndBut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 603px;
+    height: 77px;
+
+}

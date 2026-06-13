@@ -1,3 +1,3 @@
-export const difficulty = ["легкая","Средняя","Сложная"];
+export const difficulty = ["Легкая","Средняя","Сложная"];
 
 export const language = ["JavaScript", "TypeScript", "CSS", "HTML"];

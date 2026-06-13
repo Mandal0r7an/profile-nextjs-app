@@ -1,3 +1,41 @@
 .container {
-    font-size: 40px;
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.filtersRow {
+    display: flex;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.companySection {
+    margin-top: 16px;
+}
+
+.companyRow {
+    display: flex;
+    max-width: 1320px;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchWrapper {
+    flex: 1;
+    width: 100%;
+    max-width: 586px;
+}
+
+.p {
+    margin: 0 0 8px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }

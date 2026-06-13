@@ -1,0 +1,21 @@
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 170px;
+    height: 44px;
+    padding: 0 16px;
+    border: 2px solid #0056B3;
+    border-radius: 10px;
+    background-color: white;
+    color: #0056B3;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+}

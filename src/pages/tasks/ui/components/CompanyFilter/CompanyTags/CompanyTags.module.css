@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-top: 12px;
+}
+
+.tag {
+    padding: 6px 12px;
+
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    cursor: pointer;
+}
+
+.tag:hover {
+    border-color: #0056D2;
+}
+
+.active {
+    border-color: #0056D2;
+
+    background: #E8F1FF;
+
+    color: #0056D2;
+}

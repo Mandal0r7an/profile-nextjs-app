@@ -1,26 +1,16 @@
 .container {
+    position: relative;
     width: 100%;
-    max-width: 1320px;
-    margin-top: 12px;
+    max-width: 586px;
     margin: 0 auto;
-    
-}
-
-.p {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 16px;
-    margin-bottom: 12px;
+    margin: 0;
 }
 
 .minicontainer {
     position: relative;
     width: 100%;
+    margin: 0;
     max-width: 586px;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 12px;
 }
 
 .search {
