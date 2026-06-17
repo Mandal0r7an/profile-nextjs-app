@@ -1,9 +1,9 @@
 import { useGetTodosQuery } from '@/entities/todo/api/todoApi';
 import styles from './GeneralPage.module.css';
-import { Part1 } from "./components/Part1/Part1";
-import { Part2 } from "./components/Part2/Part2";
-import { Part3 } from "./components/Part3/Part3";
-import { Part4 } from "./components/Part4/Part4";
+import { Part1 } from "@/entities/general";
+import { Part2 } from "@/entities/general";
+import { Part3 } from "@/entities/general";
+import { Part4 } from "@/entities/general";
 import { NotFoundPage } from '@/pages/not-found/ui/NotFoundPage';
 
 

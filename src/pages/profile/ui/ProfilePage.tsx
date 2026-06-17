@@ -1,15 +1,15 @@
 import { useGetUserQuery } from "@/entities/user/api/userApi";
 import styles from './ProfilePage.module.css';
-import { ProfileForm } from "./components/ProfileForm/ProfileForm"; 
-import { Subscription } from "./components/Subscription/Subscription";
-import { LevelUp } from "./components/LevelUp/LevelUp";
-import { GandS } from "./components/GandS/GandS";
-import { Skills } from "./components/Skills/Skills";
-import { Personality } from "./components/Personality/Personality";
-import { Statistics } from "./components/Statistics/Statistics";
-import { Links } from "./components/Links/Links";
-import { useProfile } from "@/pages/profile/lib/useProfile";
-import { grades, specialties } from "@/pages/profile/lib/useGrade";
+import { ProfileForm } from "@/entities/user"; 
+import { Subscription } from "@/entities/user";
+import { LevelUp } from "@/entities/user";
+import { GandS } from "@/entities/user";
+import { Skills } from "@/entities/user";
+import { Personality } from "@/entities/user";
+import { Statistics } from "@/entities/user";
+import { Links } from "@/entities/user";
+import { useProfile } from "@/entities/user/model/useProfile";
+import { grades, specialties } from "@/entities/user/model/useGrade";
 import { NotFoundPage } from "@/pages/not-found/ui/NotFoundPage";
 
 function ProfilePage() {

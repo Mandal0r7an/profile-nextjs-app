@@ -1,16 +1,16 @@
 import { NotFoundPage } from "@/pages/not-found/ui/NotFoundPage"
-import { useProfile } from "@/pages/profile/lib/useProfile";
+import { useProfile } from "@/entities/user/model/useProfile";
 import styles from './QuestionPage.module.css';
-import { Search }  from "./components/Search/Search";
-import { QuestionCard }  from "./components/QuestionCard/QuestionCard";
+import { Search }  from "@/features/question-search";
+import { QuestionCard }  from "@/entities/question";
 import { useState } from 'react'
-import { questions } from '../model/mock'
+import { Questions } from '@/entities/question'
 
 function QuestionPage() {
 
     const [search, setSearch] = useState('')
 
-    const filteredQuestions = questions.filter((question) =>
+    const filteredQuestions = Questions.filter((question) =>
         question.title.toLowerCase().includes(search.toLowerCase())
     );
 

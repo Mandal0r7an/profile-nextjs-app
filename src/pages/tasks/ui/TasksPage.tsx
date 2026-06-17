@@ -1,19 +1,19 @@
 import styles from './TasksPage.module.css';
 import { useState } from 'react';
 import { NotFoundPage } from "@/pages/not-found/ui/NotFoundPage";
-import { useProfile } from "@/pages/profile/lib/useProfile";
-import { DifficultyTabs } from './components/DifficultyTabs/DifficultyTabs';
-import { TaskSearch } from './components/Filters/TaskSearch/TaskSearch';
-import { CompanySearch } from './components/CompanyFilter/CompanySearch/CompanySearch';
-import { DifficultySelect } from './components/Filters/DifficultySelect/DifficultySelect';
-import { LanguageSelect } from './components/Filters/LanguageSelect/LanguageSelect';
-import { SelectAllButton } from './components/CompanyFilter/SelectAllButton/SelectAllButton';
-import { SelectedCompanies } from './components/CompanyFilter/SelectedCompanies/SelectedCompanies';
-import { CompanyTags } from './components/CompanyFilter/CompanyTags/CompanyTags';
-import { difficulty, language } from '@/pages/tasks/lib/useSelect';
-import { ResetFilterButton } from './components/Filters/ResetFilterButton/ResetFilterButton';
-import { TaskCard } from './components/TaskCard/TaskCard';
-import { Tasks } from '../model/mock';
+import { useProfile } from "@/entities/user/model/useProfile";
+import { DifficultyTabs } from '@/features/task-tabs';
+import { TaskSearch } from '@/features/task-filter';
+import { CompanySearch } from '@/features/company-filter';
+import { DifficultySelect } from '@/features/task-filter';
+import { LanguageSelect } from '@/features/task-filter';
+import { SelectAllButton } from '@/features/company-filter';
+import { SelectedCompanies } from '@/features/company-filter';
+import { CompanyTags } from '@/entities/company';
+import { difficulty, language } from '@/entities/task/model/useSelect';
+import { ResetFilterButton } from '@/features/task-filter';
+import { TaskCard } from '@/entities/task/ui/TaskCard/TaskCard';
+import { Tasks } from '@/entities/task/model/mock';
 
 export const TasksPage = () => {
     const { user, isLoading, error } = useProfile();

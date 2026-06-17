@@ -1,9 +1,9 @@
 import { useGetTodosQuery } from '@/entities/todo/api/todoApi';
 import styles from './DailyCodingPage.module.css';
 import { useNavigate } from "react-router-dom";
-import { TaskCard } from './components';
-import { DailyCodingHeader } from './components/DailyCodingHeader/DailyCodingHeader';
-import { tasks } from '../model/mock';
+import { TaskCard } from '@/entities/daily-coding';
+import { DailyCodingHeader } from '@/entities/task/ui/DailyCodingHeader/DailyCodingHeader';
+import { Task_DailyCoding } from '@/entities/daily-coding';
 import { NotFoundPage } from '@/pages/not-found/ui/NotFoundPage';
 
 function DailyCoding() {
@@ -16,8 +16,8 @@ function DailyCoding() {
     return (
         <div className={styles.container}>
             <DailyCodingHeader />
-            {tasks.map(task => (
-                <TaskCard key={task.id} task={task} />
+            {Task_DailyCoding.map(Task_Daily => (
+                <TaskCard key={Task_Daily.id} task={Task_Daily} />
             ))} 
             <div className={styles.ButtonEnd}>
                 <button className={styles.endButton}>

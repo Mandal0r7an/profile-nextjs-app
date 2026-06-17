@@ -1,0 +1,1 @@
+export { CompanyTags } from './ui/CompanyTags/CompanyTags';

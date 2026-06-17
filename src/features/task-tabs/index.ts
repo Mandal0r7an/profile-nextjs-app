@@ -1,0 +1,1 @@
+export { DifficultyTabs } from './ui/DifficultyTabs/DifficultyTabs';
