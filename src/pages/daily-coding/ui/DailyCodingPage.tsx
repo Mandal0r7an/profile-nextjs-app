@@ -21,7 +21,7 @@ function DailyCoding() {
             ))} 
             <div className={styles.ButtonEnd}>
                 <button className={styles.endButton}>
-                    Завершить
+                    Завершит
                 </button>
             </div>
         </div>
