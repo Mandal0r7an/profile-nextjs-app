@@ -42,7 +42,7 @@ function App() {
                 }
             />
 
-            <Route path="/general" element={
+            <Route path="/" element={
                     <Layout>
                         <GeneralPage />
                     </Layout>

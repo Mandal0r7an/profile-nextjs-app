@@ -1,7 +1,11 @@
 import styles from './Header.module.css';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react'
 
 function Header() {
+
+    const [isOpen, setIsOpen] = useState(false)
+
     return (
         <header className ={styles.header}>
             <NavLink 
@@ -9,6 +13,15 @@ function Header() {
                 className={styles.logo}>
                 CODE GYM
             </NavLink>
+
+            <div 
+                className={styles.burger}
+                onClick={() => setIsOpen(!isOpen)}
+            >
+              ☰  
+            </div>
+
+            {isOpen && (
                 <nav className={styles.nav}>
                     <NavLink 
                         to="/tasks" 
@@ -29,6 +42,9 @@ function Header() {
                         Daily Coding
                     </NavLink>
                 </nav>
+            )}
+
+
             <div className={styles.buttons}>
             <NavLink
                 to="/entrance"
